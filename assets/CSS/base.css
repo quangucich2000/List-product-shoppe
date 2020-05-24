@@ -21,6 +21,8 @@ html {
     box-sizing: border-box;
 }
 
+/* Resbonsive */
+
 .grid{
     width: 1200px;
     max-width: 100%;
@@ -34,6 +36,19 @@ html {
 .grid-row{
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+/* Temp */
+.grid-column-2{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+}
+
+.grid__column-10 {
+    width: 83.3333%;
 }
 
 /* Animation */
@@ -96,7 +111,7 @@ html {
     cursor: pointer;
     background-color: transparent;
     color: var(--text-color);
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
 }
@@ -126,3 +141,8 @@ html {
     background-color: #ccc;
 }
 
+/* Back ground */
+
+.bg-white {
+    background-color: white;
+}
