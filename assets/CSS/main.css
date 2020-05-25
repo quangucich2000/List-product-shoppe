@@ -879,3 +879,69 @@
     color: var(--primary-color);
     right: -4px;
 }
+
+/* filter bar */
+.home-filter{
+    background-color: rgba(0, 0, 0, 0.04);
+    display: flex;
+    align-items: center;
+    padding: 12px 22px;
+    border-radius: 3px;
+}
+
+.home-filter__label{
+    color: #555;
+    font-size: 1.4rem;
+    display: block;
+    margin-right: 12px;
+}
+
+.home-filter__btn{
+    margin-right: 12px !important;
+    min-width: 90px !important;
+}
+
+.home-filter__page{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.home-filter__page-num{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-right: 22px;
+}
+
+.home-filter__page-control{
+    border-radius: 2px;
+    overflow: hidden;
+    display: flex;
+}
+
+.home-filter__page-current{
+    color: var(--primary-color);
+}
+
+.home-filter__page-btn{
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #555;
+}
+
+.home-filter__page-btn:nth-child(1){
+    border-right: 1px solid #eee;
+}
+
+.home-filter__page-btn--disabled.home-filter__page-btn{
+    background-color: #f9f9f9;
+    color: #ccc;
+    cursor: default;
+}

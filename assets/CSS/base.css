@@ -47,7 +47,7 @@ html {
     width: 16.6667%;
 }
 
-.grid__column-10 {
+.grid-column-10 {
     width: 83.3333%;
 }
 
@@ -145,4 +145,63 @@ html {
 
 .bg-white {
     background-color: white;
+}
+
+/* selection */
+.select-input{
+    position: relative;
+    min-width: 180px;
+    height: 34px;
+    padding: 0 12px;
+    background-color: white;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.select-input::before {
+    content: "";
+    position: absolute;
+    top: 75%;
+    right: 0;
+    left: 0;
+    height: 12px;
+    background-color: transparent;
+}
+
+.select-input:hover .select-input__list{
+    display: block;
+}
+
+.select-input__label{
+    font-size: 1.4rem;
+}
+
+.select-input__list{
+    position: absolute;
+    top: 80%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 3px;
+    padding-left: 0;
+    display: none;
+}
+
+.select-input__item{
+    list-style: none;
+}
+
+.select-input__link{
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 16px 12px;
+    font-size: 1.4rem;
+}
+
+.select-input__link:hover {
+    color: var(--primary-color);
 }
